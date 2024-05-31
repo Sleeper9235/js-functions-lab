@@ -53,7 +53,7 @@ Complete the exercise in the space below:
 */
 
 const isCharAVowel = (ltr) => {
-    if (ltr === "a" || "e" || "i" || "o" || "u") {
+    if (ltr === "a" || ltr === "e" || ltr === "i" || ltr === "o" || ltr === "u") {
             return true;
     } else {
             return false;
@@ -93,19 +93,10 @@ Example: greetUser('Sam', 'morning') should return "Good morning, Sam!"
 Complete the exercise in the space below:
 */
 
-const greetUser = (greetName, tod) => {
-    switch (tod) {
-        case 'morning':
-            return `Good ${tod}, ${greetName}`;
-            break;
-        case 'afternoon':
-            return `Good ${tod}, ${greetName}`;
-            break;
-        case 'night':
-            return `Good ${tod}, ${greetName}`;
-            break;
-    }
+const greetUser = (greetName, time) => {
+    return `Good ${time}, ${greetName}!`;
 }
+
 
 console.log('Exercise 5 Result:', greetUser("Sam", "morning"));
 
